@@ -15,16 +15,51 @@
 
     <script>
 
-        var nome = window.prompt('Qual é seu nome ?')
-        document.write(`Olá <strong>${nome}</strong>, Seu nome tem ${nome.length} letras. </br>`)
-        document.write(`Seu nome em maiúsculas fica ${nome.toUpperCase()}. </br>`)
-        document.write(`Seu nome em minúsculos fica ${nome.toLowerCase()}. </br>`)
+                    //Aula 6 – Tratamento de dados - Maiúscula e minúscula //
+
+        var nome = window.prompt('Esse e seu nome!')
+        var nome2 = window.prompt('Esse e seu nome Maiúsculo!')
+        var nome3 = window.prompt('Esse e seu nome Minúsculo!')
+        document.write(`Ola ${nome} seu nome em maiúsculo é ${nome2.toUpperCase()} e seu nome em minúsculo é ${nome3.toLowerCase()}.`)
+
+
+                     //Aula 6 – Tratamento de dados - Number //
+
+        var n1 = Number(window.prompt('Primeira nota:'))
+        var n2 = Number(window.prompt('Segunda nota:'))
+        var n3 = Number(window.prompt('Terceira nota:'))
+        var n4 = Number(window.prompt('Quarta nota:'))
+        var soma = n1 + n2 + n3 + n4 
+        var media = (n1 + n2 + n3 + n4) / 4
+
+        document.write(`A soma das notas são de : ${soma}, e a média de notas é ${media}.`) 
+
+
+                     //Aula 6 – Tratamento de dados - string //
+
+         
+        var nome = window.prompt('Qual é o seu nome ?')
+        var idade = window.prompt('Qual é a sua idade ?')
+        var sexo = window.prompt('Qaul é o seu sexo ?')
+        var endereco = window.prompt('Qaul é o seu endereço')
+        var mae = window.prompt('Qual o nome da sua mãe ?')
+        var pai = window.prompt('Qual o nome do seu pai ?')
+        var escola = window.prompt('Em que escola você estudou ou estuda ?')
+        var nivel = window.prompt('Qual o seu nivel de escolaridade ?')
+        var profissao = window.prompt('Qual e a sua profissão ?')
+
+        document.write(`Ola meu nome é ${nome}, tenho ${idade} anos de idade, sou do sexo ${sexo} meu endereço é ${endereco} minha mãe se chama ${mae}, meu pai se chama ${pai}, estudo/estudei no instituição ${escola}, e meu nível de escolaridade é ${nivel} e minha profissão é ${profissao}.`) 
+
+
 
         
 
-    //Aula 6 – Tratamento de dados//
 
-/*>n1
+                     //Aula 6 – Tratamento de dados//
+
+
+/*>
+> n1
 1545.5
 > n1.toFixed(2)
 '1545.50'
@@ -37,7 +72,8 @@
 > n1.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})
 'US$ 1.545,50'
 > n1.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})
-'€ 1.545,50'*/
+'€ 1.545,50'
+*/
 
 
 
