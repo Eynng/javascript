@@ -3,14 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nacionalidade</title>
+    <title>Nacionalidaes</title>
+    <style>
+        main.container {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-around;
+            width: 800px;
+            height: 300px;
+            margin: auto;
+            background: linear-gradient(to top, rgb(0, 255, 255), rgb(0, 140, 255));
+            border: 2px solid rgb(0, 204, 255);
+        }
+    </style>
 </head>
 <body>
-    <h1>Qual a sua nacionalidade ?</h1>
-    <input type="text" name="txt" id="txt">
-    <input type="button" value="Verificar" onclick="verificar()">
-    
-    <div id="res"></div>
+    <main class="container">
+        <div class="p1">
+            <h1>Insira seu País </h1>
+            <input type="text" name="txt" id="txt">
+            <input type="button" value="verificar" onclick="verificar()">
+            <div id="res"></div>
+        </div>
+        <div class="p2">
+            <table>
+                <h2>Paises disponíveis</h2>
+                <tr>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td>Portugal</td>
+                </tr>
+                <tr>
+                    <td>França</td>
+                </tr>
+                <tr>
+                    <td>Alemanha</td>
+                </tr>
+                <tr>
+                    <td>Italia</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
 
     <script>
 
@@ -18,18 +55,33 @@
             var txtn = window.document.getElementById('txt')
             var res = window.document.getElementById('res')
             var pais = String(txtn.value)
-            res.innerHTML = `Vivendo em <strong>${pais}</strong>`
-            if (pais == 'Brasil') {
-                res.innerHTML += '<p>Então você é brasileiro</p>'
-            } else { 
-                res.innerHTML += '<p>Conseguimos ver que vocé é estrangeiro</p>'
+            res.innerHTML = `Sua nacionalidade é:<strong>${pais}</strong>`
+
+              if (pais == 'Brasil') {
+                res.innerHTML += '<p>Você é <strong>brasileiro</strong>, e está na região da <strong>America do Sul</strong></p>' 
+            } if (pais == 'Portugal') {
+                res.innerHTML += ' <P>Vocé é <strong>portugues</strong> e esta na regiao da <strong>Europa</strong></P>'
+            } if (pais == 'França') {
+                res.innerHTML += '<P>Vocé é <strong>frances</strong> e esta na regiao da <strong>Europa</strong></P>'
+            } if (pais == 'Alemanha') {
+                res.innerHTML += '<P>Vocé é <strong>alemao</strong> e esta na regiao da <strong>Europa</strong></P>'
+            } if (pais == 'Italia') {
+                res.innerHTML += '<P>Vocé é <strong>italiano</strong> e esta na regiao da <strong>Europa</strong></P>'
+            } if (pais == 'Espanha') {
+                res.innerHTML += '<P>Vocé é <strong>espanhol</strong> e esta na regiao da <strong>Europa</strong></P>'
+            } if (pais == '') {
+                res.innerHTML += '<P>Insira um País!</P>'
             }
         }
 
+       
+
+        
 
 
 
 
     </script>
+    
 </body>
 </html>
