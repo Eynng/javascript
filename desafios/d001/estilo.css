@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+body {
+    background-color: rgb(0, 110, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* cabecalho */
+
+header#cabecalho {
+    margin-bottom: 20px;
+}
+
+
+/* corpo */
+
+section#card {
+
+    background-color: white;
+    color: black;
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452);
+    padding: 15px;
+
+}
+
+div {
+    color: black;
+}
+
+/* rodapé */
+
+footer#rodape {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
