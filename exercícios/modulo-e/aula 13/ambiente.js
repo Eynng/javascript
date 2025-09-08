@@ -31,11 +31,11 @@ do {
     c++
 } while (c<= 100)
 
-    var c = 1 
+var c = 1 
     while (c <= 100) {
-        console.log(`Passos ${c}`)
-        c++
-    }
+    console.log(`Passos ${c}`)
+    c++
+}
 
     
 
