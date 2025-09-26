@@ -3,9 +3,10 @@ let valores = [8 , 1 , 7 , 4 , 2 , 9 , 1 , 5 , 8 , 4 ]
 
                /* PERCURSO PRA EXIBIÇÃO DO VETOR */
 
-valores.sort()
-/valores.push(3)
-valores.sort()
+valores.sort() /* organiza em ordem numérica */
+valores.push(3) /* adiciona o valor 3 ao final do array */
+
+
 console.log(valores)
 
                 /* JEITO ERRADO DE EXECUTAR UM ARRAY/VETOR */
