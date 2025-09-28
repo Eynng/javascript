@@ -11,7 +11,7 @@ console.log(valores)
 
                 /* JEITO ERRADO DE EXECUTAR UM ARRAY/VETOR */
 
-onsole.log(valores[0])
+console.log(valores[0])
 console.log(valores[1])
 console.log(valores[2])
 console.log(valores[3])
@@ -35,4 +35,28 @@ for(let pos in valores) {
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 
 }
+
+let valores = [6 , 2 , 5, 4 , 3]
+
+
+valores.push(1)
+valores.push(8)
+valores.push(9)
+
+valores.sort()
+
+console.log(valores)
+console.log(valores[0])
+console.log(valores[1])
+console.log(valores[2])
+console.log(valores[3])
+console.log(valores[4])
+console.log(valores[5])
+console.log(valores[6])
+console.log(valores[7])
+console.log(valores[8])
+
+
+
+
 
