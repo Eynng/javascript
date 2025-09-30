@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analisador de Números</title>
     <link rel="stylesheet" href="estilo.css">
-    <script src="script.js"></script>
 
 </head>
 <body>
@@ -15,21 +14,16 @@
 
     <section id="card">
         
-        <div id="msg">
+        <div>
             <p>Número (entre 1 e 100) : </p>
             <input type="number" name="fnum" id="fnum">
-            <input type="button" value="Adicionar" onclick="Adicionar()">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br><br><select name="flista" id="flista" size="6">
+            <input type="button" value="Finalizar">
         </div>
 
-        <div id="tab">
-            <select name="flista" id="flista" size="6">
-                <option value="">Digite um número acima</option>
-            </select>
-            <input type="button" value="Finalizar" onclick="Finalizar()">
-
-            <div id="res">
+        <div id="res">
                 
-            </div>
         </div>
 
     </section>
@@ -38,6 +32,10 @@
     <footer id="rodape">
         <p>&copy;CursoemVideo</p>
     </footer>
-    <script src="script.js"></script>
+    
+<script
+    src="script.js">
+</script>
+
 </body>
 </html>
