@@ -39,6 +39,7 @@ section#card {
 
 select {
     width: 300px;
+    height: 100px;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -46,8 +47,22 @@ select {
     
 }
 
+#button {
+    background-color: rgb(0, 110, 255);
+    color: white;
+    border: 0px;
+    margin: 1px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 div {
     color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 10px;
 }
 
 div#tab {
