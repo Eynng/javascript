@@ -12,6 +12,8 @@ engordar(p=0){
 amigo.engordar(2)
 console.log(`${amigo.nome} pesa ${amigo.peso}Kg`)*/
 
+/*let amigo = {nome: 'Maria', sexo: 'Feminino', peso:'78.5' , idade: 23 , 
+    engordar(p=0){
         console.log('Engordou')
         this.peso +=p
     }
