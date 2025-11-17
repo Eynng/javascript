@@ -25,17 +25,29 @@ console.log('Tudo bem!')
 console.log('Tudo bem!')
 */
 
-var c = 1
-do {
-    console.log(`Vezes ${c}`)
-    c++
-} while (c<= 100)
+// var c = 1
+// do {
+//     console.log(`Vezes ${c}`)
+//     c++
+// } while (c<= 100)
+
+// var c = 1 
+//     while (c <= 100) {
+//     console.log(`Passos ${c}`)
+//     c++
+// }
 
 var c = 1 
     while (c <= 100) {
     console.log(`Passos ${c}`)
     c++
 }
+
+var c = 1 
+do {
+    console.log(`Passos ${c}`)
+    c++
+} while (c <= 100)
 
     
 
